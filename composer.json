@@ -1,0 +1,17 @@
+{
+    "name": "kehet/rss-executer",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kehet\\RssExecuter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kehet",
+            "email": "382965-kehet@users.noreply.gitlab.com"
+        }
+    ]
+}
