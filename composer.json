@@ -1,12 +1,12 @@
 {
     "name": "kehet/rss-executer",
     "require": {
-        "guzzlehttp/guzzle": "^7.8"
+        "guzzlehttp/guzzle": "^7.8",
+        "ext-simplexml": "*",
+        "ext-json": "*"
     },
-    "autoload": {
-        "psr-4": {
-            "Kehet\\RssExecuter\\": "src/"
-        }
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     },
     "authors": [
         {

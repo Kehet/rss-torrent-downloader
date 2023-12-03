@@ -2,6 +2,7 @@
 
 # Installation
 
+```shell
 sudo apt install php php-xml php-curl php-zip git unzip
 git clone https://github.com/Kehet/rss-torrent-downloader.git
 cd rss-torrent-downloader
@@ -21,6 +22,12 @@ php composer-setup.php --quiet
 rm composer-setup.php
 
 php composer.phar install
+```
 
-php update.php
-php remove-done.php
+## Crontab
+
+```
+2 * * * * /usr/bin/php /home/kehet/rss-torrent-downloader/fetch-rss.php > /home/kehet/rss-torrent-downloader/fetch-rss.log 2>&1
+5 * * * * /usr/bin/php /home/kehet/rss-torrent-downloader/remove-done.php > /home/kehet/rss-torrent-downloader/remove-done.log 2>&1
+```
+
